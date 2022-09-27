@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/styleM.css">
+    <title>Redouble - Juegos de Cartas</title>
+</head>
+
+<body>
+    <main>
+        <!-- Navbar -->
+        <header>
+            <nav class="navbar navbar-expand-lg blur fixed-top navbar-light">
+                <div class="container-xxl container-md container-sm nav-logo">
+                    <a class="navbar-brand" href="./index.html"><img src="./img/redoubleLogo.svg" alt="logo redouble"
+                            height="30vh" class="d-inline-block align-text-top"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse navegador-list" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Juegos
+                                </a>
+                                <ul class="dropdown-menu blur2" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="./sections/games.html">Combate</a></li>
+                                    <li><a class="dropdown-item" href="./sections/games.html">Familiar</a></li>
+                                    <li><a class="dropdown-item" href="./sections/games.html">Fiesta</a></li>
+                                </ul>
+                            </li>
+                            <a class="nav-link" aria-current="page" href="./sections/new.html">Nuevos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./sections/brand.html">Editoriales</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./sections/contact.html" tabindex="-1"
+                                    aria-disabled="true">Contacto</a>
+                            </li>
+                        </ul>
+                        <form class="d-flex visually-hidden">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-success" type="submit">Search</button>
+                        </form>
+                    </div>
+                </div>
+            </nav>
+
+            <!-- Carousel -->
+            <section class="container-xxl container-md container-sm px-0 mt-5">
+                <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+                            aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" data-bs-interval="10000">
+                            <a href="./sections/new.html#gloriousWrestlingAllianceUltrabrawl">
+                                <img src="./img/carouselGloriousWrestlingAllianceUltrabrawl.jpg" class="d-block w-100"
+                                    alt="glorious wrestling alliance ultrabrawl">
+                            </a>
+                            <div class="carousel-caption d-none d-md-block">
+                                <a class="btn btn-primary"
+                                    href="./sections/new.html#gloriousWrestlingAllianceUltrabrawl">Ver Juego</a>
+                            </div>
+                        </div>
+                        
+                        <div class="carousel-item" data-bs-interval="2000">
+                            <a href="./sections/new.html#plantBasedRiot">
+                                <img src="./img/carouselPlantBasedRiot.jpg" class="d-block w-100"
+                                    alt="plant based riot">
+                            </a>
+                            <div class="carousel-caption d-none d-md-block">
+                                <a class="btn btn-primary" href="./sections/new.html#plantBasedRiot">Ver Juego</a>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <a href="./sections/new.html#fightTheBlinght">
+                            <img src="./img/carouselFightTheBlinght.jpg" class="d-block w-100"
+                                alt="fight the blinght">
+                            </a>
+                            <div class="carousel-caption d-none d-md-block">
+                                <a class="btn btn-primary" href="./sections/new.html#fightTheBlinght">Ver Juego</a>
+                            </div>
+                        </div>
+
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon btn-primary" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon btn-primary" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </section>
+
+        </header>
+
+        <!-- News -->
+        <section class="container-xxl container-md container-sm bg-white border-grey pb-3 ">
+            <div class="border-bottom border-dark pt-2">
+                <h4>Noticias</h4>
+            </div>
+
+            <div class="container mt-1">
+                <div class="row">
+
+                    <div class="col-xxl-4 col-lg-3 col-md-12 col-sm-12 g-2 ps-md-3">
+                        <img src="./img/challengers.jpg" alt="challengers game" class="w-100 contain-img rounded-3">
+                    </div>
+
+                    <div class="col-xxl-8 col-lg-9 col-md-12 col-sm-12 g-2">
+                        <h5>Challengers!</h5>
+                        <ul class="nav navegador-list">
+                            <li class="nav-item fw-bold me-2">Editorial:</li>
+                            <li class="nav-item  me-2">
+                                <a class=" " href="https://www.zmangames.com/en/index/" target="_blank">Z-Man Games</a>
+                            </li>
+                            <li class="nav-item me-2 fw-bold">Diseñadores:</li>
+                            <li class="nav-item me-2">
+                                Johannes Krenner,
+                            </li>
+                            <li class="nav-item me-2">
+                                Markus Slawitscheck
+                            </li>
+                        </ul>
+                        <p class="lh-sm">Hoy les podemos hablar de un juego de mesa muy interesante, se trata de un
+                            nuevo lanzamiento
+                            llamado ¡Challengers!, para 1 a 8 jugadores creado por Johanner Krenner y Markus
+                            Slawitscheck, este juego esta lincenciado por Z-Man Games, por el momento este título está
+                            en idioma inglés.
+                        </p>
+                        <p class="lh-sm">El objetivo de Challengers es capturar la bandera, la cual cambiará varias
+                            veces de manos entres los jugadores durante el transcurso de un duelo, por lo que querrás
+                            estar en posesión de esa bandera cuando termine el duelo. Si ganas el duelo, recoges un
+                            trofeo, con trofeos que valen un número variable de "fanáticos", que son los puntos del
+                            juego, y con trofeos que son más valiosos en rondas posteriores del juego.
+                        </p>
+                        <p class="lh-sm">
+                            Después de que finaliza una ronda, probablemente cambies de asiento para enfrentarte a un
+                            oponente
+                            diferente, por lo que en un juego con ocho jugadores, tendrás cuatro duelos simultáneamente
+                            y jugarás uno contra el otro oponente una vez.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Highlights Games -->
+        <section class="container-xxl container-md container-sm bg-white px-0">
+            <div class="border-bottom border-dark pt-4 p-2">
+                <h4>Selección de juegos destacados</h4>
+            </div>
+
+            <div class="container bg-grey mt-1 pb-4">
+                <div class="row row-cols-1 row-cols-xxl-4 row-cols-lg-4 row-cols-md-3 row-cols-sm-2 px-xxl-4 g-3">
+
+                    <div class="col card-move">
+                        <section class="card border-white border-rounded-8">
+                            <img src="./img/virus.jpg" alt="virus" class="card-img-top cover">
+                            <div class="card-body p-1 pb-0">
+                                <h5 class="card-title">Virus!</h5>
+                                <h6 class="card-subtitle">Diseñadores:</h6>
+                                <div class="row">
+                                    <ul class="col list-font">
+                                        </li>
+                                        <li>Domingo Cabrero</li>
+                                        <li>Carlos López</li>
+                                        <li>Santi Santisteban</li>
+                                    </ul>
+                                    <div class="col-4 d-flex justify-content-end">
+                                        <a href="./sections/brand.html#tranjisBrand"><img src="./img/logoTranjis.png" alt="" class="card-brand"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+
+                    <div class="col card-move">
+                        <section class="card border-white border-rounded-8">
+                            <img src="./img/sushiGo.jpg" alt="sushi go" class="card-img-top cover">
+                            <div class="card-body p-1 pb-0">
+                                <h5 class="card-title">Sushi Go!</h5>
+                                <h6 class="card-subtitle">Diseñadores:</h6>
+                                <div class="row">
+                                    <ul class="col list-font">
+                                        </li>
+                                        <li>Phil Walker</li>
+                                        <li>Harding</li>
+                                        <li>.</li>
+                                    </ul>
+                                    <div class="col-4 d-flex justify-content-end">
+                                        <a href="./sections/brand.html#gameWrightBrand"><img src="./img/logoGameWright.png" alt="game wright" class="card-brand"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+
+                    <div class="col card-move">
+                        <section class="card border-white border-rounded-8">
+                            <img src="./img/toma6.jpg" alt="toma 6" class="card-img-top cover">
+                            <div class="card-body p-1 pb-0">
+                                <h5 class="card-title">Toma 6</h5>
+                                <h6 class="card-subtitle">Diseñadores:</h6>
+                                <div class="row">
+                                    <ul class="col list-font">
+                                        </li>
+                                        <li>Wolfgang Kramer</li>
+                                        <li>.</li>
+                                        <li>.</li>
+                                    </ul>
+                                    <div class="col-4 d-flex justify-content-end">
+                                        <a href="./sections/brand.html#bureauDeJuegosBrand"><img src="./img/logoBureauDeJuegos.png" alt="bureau de juegos"
+                                            class="card-brand"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+
+                    <div class="col card-move">
+                        <section class="card border-white border-rounded-8">
+                            <img src="./img/phase10.jpg" alt="phase 10" class="card-img-top cover">
+                            <div class="card-body p-1 pb-0">
+                                <h5 class="card-title">Phase 10</h5>
+                                <h6 class="card-subtitle">Diseñadores:</h6>
+                                <div class="row">
+                                    <ul class="col list-font">
+                                        </li>
+                                        <li>Ken Johnson</li>
+                                        <li>.</li>
+                                        <li>.</li>
+                                    </ul>
+                                    <div class="col-4 d-flex justify-content-end">
+                                        <a href="./sections/brand.html#mattelBrand"><img src="./img/logoMattel.png" alt="mattel" class="card-brand"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+
+                    <div class="col card-move">
+                        <section class="card border-white border-rounded-8">
+                            <img src="./img/red7.jpg" alt="red7" class="card-img-top cover">
+                            <div class="card-body p-1 pb-0">
+                                <h5 class="card-title">Red7</h5>
+                                <h6 class="card-subtitle">Diseñadores:</h6>
+                                <div class="row">
+                                    <ul class="col list-font">
+                                        </li>
+                                        <li>Carl Chudyk</li>
+                                        <li>Chris Cieslik</li>
+                                        <li>.</li>
+                                    </ul>
+                                    <div class="col-4 d-flex justify-content-end">
+                                        <a href="./sections/brand.html#bureauDeJuegosBrand"><img src="./img/logoBureauDeJuegos.png" alt="bureau de juegos"
+                                            class="card-brand"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+
+                    <div class="col card-move">
+                        <section class="card border-white border-rounded-8">
+                            <img src="./img/monopolyDeal.jpg" alt="monopoly deal" class="card-img-top cover">
+                            <div class="card-body p-1 pb-0">
+                                <h5 class="card-title">Monopoly Deal</h5>
+                                <h6 class="card-subtitle">Diseñadores:</h6>
+                                <div class="row">
+                                    <ul class="col list-font">
+                                        </li>
+                                        <li>Katharine Chapman</li>
+                                        <li>.</li>
+                                        <li>.</li>
+                                    </ul>
+                                    <div class="col-4 d-flex justify-content-end">
+                                        <a href="./sections/brand.html#hasbroBrand"></a><img src="./img/logoHasbro.png" alt="hasbro" class="card-brand"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+
+                    <div class="col card-move">
+                        <section class="card border-white border-rounded-8">
+                            <img src="./img/uno.jpg" alt="uno" class="card-img-top cover">
+                            <div class="card-body p-1 pb-0">
+                                <h5 class="card-title">Uno Original</h5>
+                                <h6 class="card-subtitle">Diseñadores:</h6>
+                                <div class="row">
+                                    <ul class="col list-font">
+                                        </li>
+                                        <li>Merle Robbins</li>
+                                        <li>.</li>
+                                        <li>.</li>
+                                    </ul>
+                                    <div class="col-4 d-flex justify-content-end">
+                                        <a href="./sections/brand.html#mattelBrand"><img src="./img/logoMattel.png" alt="mattel" class="card-brand"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+
+                    <div class="col card-move">
+                        <section class="card border-white border-rounded-8">
+                            <img src="./img/goNutsForDonuts.jpg" alt="go nuts for donuts" class="card-img-top cover">
+                            <div class="card-body p-1 pb-0">
+                                <h5 class="card-title">Locos por las donas</h5>
+                                <h6 class="card-subtitle">Diseñadores:</h6>
+                                <div class="row">
+                                    <ul class="col list-font">
+                                        </li>
+                                        <li>Zachary Eagle</li>
+                                        <li>.</li>
+                                        <li>.</li>
+                                    </ul>
+                                    <div class="col-4 d-flex justify-content-end">
+                                        <a href="./sections/brand.html#gameWrightBrand"><img src="./img/logoGameWright.png" alt="game wright" class="card-brand"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Highlights Videos -->
+        <section class="container-xxl container-md container-sm bg-white border-grey pb-5 ">
+            <div class="border-bottom border-dark pt-4">
+                <h4>Selección de videos</h4>
+            </div>
+
+            <div class="container mt-3 p-0">
+                <div class="row row-cols-1 row-cols-xxl-4 row-cols-lg-4 row-cols-md-3 row-cols-sm-2 px-xxl-4 g-3">
+
+                    <div class="col card-shadows">
+                        <section class="card p-1 bg-black rounded-8">
+                            <iframe width="1024" height="768" src="https://www.youtube.com/embed/586FW8SOv9c"
+                                title="Virus: Cómo jugar" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                            <div class="card-body p-1 pt-3">
+                                <h6 class="card-title text-white">Conociendo Virus</h6>
+                            </div>
+                        </section>
+                    </div>
+
+                    <div class="col card-shadows">
+                        <section class="card p-1 bg-black rounded-8">
+                            <iframe width="1024" height="768" src="https://www.youtube.com/embed/XTTGc52KYZY"
+                                title="Toma 6 | 6 Nimmt | Tutorial | Bureau de Juegos | Wolfgang Kramer | Partida de Locos |" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                            <div class="card-body p-1 pt-3">
+                                <h6 class="card-title text-white">Aprende a Jugar Toma 6!</h6>
+                            </div>
+                        </section>
+                    </div>
+
+                    <div class="col card-shadows">
+                        <section class="card p-1 bg-black rounded-8">
+                            <iframe width="1024" height="768" src="https://www.youtube.com/embed/dW5RcOVyFVw"
+                                title="Cómo jugar a Sushi Go - Devir" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                            <div class="card-body p-1 pt-3">
+                                <h6 class="card-title text-white">Aprende a Jugar sushi go!</h6>
+                            </div>
+                        </section>
+                    </div>
+
+                    <div class="col card-shadows">
+                        <section class="card p-1 bg-black rounded-8">
+                            <iframe width="1024" height="768" src="https://www.youtube.com/embed/IWJUxLfuDic"
+                                title="Cómo Jugar Fase 10 Phase 10 l Repaso Rápido de las Reglas en Menos de 3 Minutos"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                            <div class="card-body p-1 pt-3">
+                                <h6 class="card-title text-white">Aprende a Jugar Phase 10</h6>
+                            </div>
+                        </section>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </section>
+
+        <!-- Rating -->
+        <section class="container-xxl container-md container-sm bg-white border-grey pb-5 ">
+            <div class="border-bottom border-dark pt-4">
+                <h4>Clasificación</h4>
+            </div>
+
+            <div class="container mt-3 p-0">
+
+                <div class="row">
+
+                    <div class="col-lg-4 col-md-5 col-sm-6 py-3">
+                        <div class="col-xxl-8 col-lg-10 col-md-12 col-sm-12">
+                            <div class="rating-pic rating-cont">
+                                <img src="./img/phase10.jpg" alt="">
+                                <div class="rating-info ps-4">
+                                    <h6 class="mb-0">Phase 10</h6>
+                                    <div class="rating rating2">
+                                        <a href="#5" title="Give 5 stars">★</a>
+                                        <a href="#4" title="Give 4 stars">★</a>
+                                        <a href="#3" title="Give 3 stars">★</a>
+                                        <a href="#2" title="Give 2 stars">★</a>
+                                        <a href="#1" title="Give 1 star">★</a>
+                                    </div>
+                                    <h6>0.0</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-5 col-sm-6 py-3">
+                        <div class="col-xxl-8 col-lg-10 col-md-12 col-sm-12">
+                            <div class="rating-pic rating-cont">
+                                <img src="./img/phase10.jpg" alt="">
+                                <div class="rating-info ps-4">
+                                    <h6 class="mb-0">Phase 10</h6>
+                                    <div class="rating rating2">
+                                        <a href="#5" title="Give 5 stars">★</a>
+                                        <a href="#4" title="Give 4 stars">★</a>
+                                        <a href="#3" title="Give 3 stars">★</a>
+                                        <a href="#2" title="Give 2 stars">★</a>
+                                        <a href="#1" title="Give 1 star">★</a>
+                                    </div>
+                                    <h6>0.0</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-5 col-sm-6 py-3">
+                        <div class="col-xxl-8 col-lg-10 col-md-12 col-sm-12">
+                            <div class="rating-pic rating-cont">
+                                <img src="./img/phase10.jpg" alt="">
+                                <div class="rating-info ps-4">
+                                    <h6 class="mb-0">Phase 10</h6>
+                                    <div class="rating rating2">
+                                        <a href="#5" title="Give 5 stars">★</a>
+                                        <a href="#4" title="Give 4 stars">★</a>
+                                        <a href="#3" title="Give 3 stars">★</a>
+                                        <a href="#2" title="Give 2 stars">★</a>
+                                        <a href="#1" title="Give 1 star">★</a>
+                                    </div>
+                                    <h6>0.0</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+        </section>
+
+        <footer>
+            <div class="container-xxl container-md container-sm bg-black px-0 ">
+
+                <div class="container pt-4">
+                    <div class="row row-cols-1 row-cols-xxl-2 row-cols-lg-2 row-cols-md-2 row-cols-sm-1 g-3">
+
+                        <div class="col px-3 logo-white justify-content-md-end justify-content-sm-center">
+                            <a href="./index.html" class=" d-flex justify-content-md-start justify-content-sm-center ">
+                                <img src="./img/redoubleLogo.svg" alt="logo redouble" height="30vh">
+                            </a>
+                            <p class="text-white text-md-start text-sm-center py-2">© 2022 redouble. Todos los derechos
+                                reservados.
+                            </p>
+                        </div>
+                        <div class="col px-3">
+                            <ul class="nav logo-white justify-content-md-end justify-content-sm-center">
+                                <li class="nav-item mx-1"><a href="https://twitter.com/" target="_blank"> <img
+                                            src="./img/twitter.svg" alt="icono twitter" height="30vh">
+                                    </a></li>
+                                <li class="nav-item mx-1"><a href="https://www.instagram.com/?hl=es-la" target="_blank">
+                                        <img src="./img/instagram.svg" alt="icono instagram" height="30vh">
+                                    </a></li>
+                                <li class="nav-item mx-1"><a href="https://www.facebook.com/home.php" target="_blank">
+                                        <img src="./img/facebook.svg" alt="icono facebook" height="30vh">
+                                    </a></li>
+                            </ul>
+                        </div>
+                    </div>
+        </footer>
+
+    </main>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
