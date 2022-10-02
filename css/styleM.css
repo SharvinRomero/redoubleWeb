@@ -14,13 +14,6 @@ body {
     background: linear-gradient(180deg, rgba(255, 156, 11, 1) 0%, rgba(255, 122, 11, 1) 100%) no-repeat;
 }
 
-main {
-    background-image: url(../img/texture.svg);
-    background-repeat: repeat;
-    background-size: 10%;
-    object-fit: cover;
-}
-
 h1,
 h2,
 h3,
@@ -51,6 +44,13 @@ ul {
 
 .bg-black {
     background-color: black;
+}
+
+.bg-texture {
+    background-image: url(../img/texture.svg);
+    background-repeat: repeat;
+    background-size: 7%;
+    object-fit: cover;
 }
 
 .border-grey {

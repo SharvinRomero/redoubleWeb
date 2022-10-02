@@ -13,64 +13,63 @@
 </head>
 
 <body>
-    <main>
-        <!-- Navbar -->
-        <header>
-            <nav class="navbar navbar-expand-lg blur fixed-top navbar-light">
-                <div class="container-xxl container-md container-sm nav-logo">
-                    <a class="navbar-brand" href="../index.html"><img src="../img/redoubleLogo.svg" alt="logo redouble"
-                            height="30vh" class="d-inline-block align-text-top"></a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse navegador-list" id="navbarSupportedContent">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                            <li class="nav-item">
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                                    data-bs-toggle="dropdown" aria-expanded="false">
-                                    Juegos
-                                </a>
-                                <ul class="dropdown-menu blur" aria-labelledby="navbarDropdown">
-                                    <li><a class="dropdown-item" href="./games.html#combate">Combate</a></li>
-                                    <li><a class="dropdown-item" href="./games.html#familiar">Familiar</a></li>
-                                    <li><a class="dropdown-item" href="./games.html#fiesta">Fiesta</a></li>
-                                </ul>
-                            </li>
-                            <a class="nav-link" aria-current="page" href="./new.html">Nuevos</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="./brand.html">Editoriales</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="./contact.html" tabindex="-1"
-                                    aria-disabled="true">Contacto</a>
-                            </li>
-                        </ul>
-                        <form class="d-flex visually-hidden">
-                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                            <button class="btn btn-outline-success" type="submit">Search</button>
-                        </form>
+    <!-- Navbar -->
+    <header class="bg-texture">
+        <nav class="navbar navbar-expand-lg blur fixed-top navbar-light">
+            <div class="container-xxl container-md container-sm nav-logo">
+                <a class="navbar-brand" href="../index.html"><img src="../img/redoubleLogo.svg" alt="logo redouble"
+                        height="30vh" class="d-inline-block align-text-top"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse navegador-list" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Juegos
+                            </a>
+                            <ul class="dropdown-menu blur" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="./games.html#combate">Combate</a></li>
+                                <li><a class="dropdown-item" href="./games.html#familiar">Familiar</a></li>
+                                <li><a class="dropdown-item" href="./games.html#fiesta">Fiesta</a></li>
+                            </ul>
+                        </li>
+                        <a class="nav-link" aria-current="page" href="./new.html">Nuevos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./brand.html">Editoriales</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contact.html" tabindex="-1" aria-disabled="true">Contacto</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex visually-hidden">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Banner -->
+        <section class="container-xxl container-md container-sm px-0 mt-5">
+            <div id="carouselExampleSlidesOnly" class="carousel slide mt-7" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="../img/bannerBrand.jpg" class="d-block w-100" alt="...">
                     </div>
                 </div>
-            </nav>
+            </div>
+        </section>
 
-            <!-- banner -->
-            <section class="container-xxl container-md container-sm px-0 mt-5">
-                <div id="carouselExampleSlidesOnly" class="carousel slide mt-7" data-bs-ride="carousel">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img src="../img/bannerBrand.jpg" class="d-block w-100" alt="...">
-                        </div>
-                    </div>
-                </div>
-            </section>
+    </header>
 
-        </header>
-
-        <!-- brand -->
+    <!-- Brand -->
+    <main class="bg-texture">
         <section class="container-xxl container-md container-sm bg-white px-0 ">
             <div class="border-bottom border-dark ps-3 pt-3">
                 <h4>Marcas</h4>
@@ -149,15 +148,17 @@
 
                     <div class="pics shadow rounded-8 p-3 bg-white" id="tranjisBrand">
                         <img src="../img/logoTranjis.png" alt="">
-                        <p>Tranjis Games es una Editorial de Juegos de Mesa dedicada a la creación y desarrollo de juegos.
+                        <p>Tranjis Games es una Editorial de Juegos de Mesa dedicada a la creación y desarrollo de
+                            juegos.
                             El principal objetivo es la publicación de juegos de mesa para todo tipo de públicos.
-                            Creada en 2015 gracias a tres “frikis” que se lanzaron a la aventura de crear y comercializar su propio juego de mesa… Virus!. </p>
-                            <div class="row p-2">
-                                <img src="../img/gameVirus.jpg" class="p-1" alt="virus">
-                                <img src="../img/gameRed7.jpg" class="p-1" alt="red7">
-                                <img src="../img/gameMia.jpg" class="p-1" alt="mia">
-                                <img src="../img/gameDesplumados.jpg" class="p-1" alt="desplumados">
-                            </div>
+                            Creada en 2015 gracias a tres “frikis” que se lanzaron a la aventura de crear y
+                            comercializar su propio juego de mesa… Virus!. </p>
+                        <div class="row p-2">
+                            <img src="../img/gameVirus.jpg" class="p-1" alt="virus">
+                            <img src="../img/gameRed7.jpg" class="p-1" alt="red7">
+                            <img src="../img/gameMia.jpg" class="p-1" alt="mia">
+                            <img src="../img/gameDesplumados.jpg" class="p-1" alt="desplumados">
+                        </div>
                     </div>
 
 
@@ -165,39 +166,38 @@
             </section>
 
         </section>
-
-
-        <footer>
-            <div class="container-xxl container-md container-sm bg-black px-0 ">
-
-                <div class="container pt-4">
-                    <div class="row row-cols-1 row-cols-xxl-2 row-cols-lg-2 row-cols-md-2 row-cols-sm-1 g-3">
-
-                        <div class="col px-3 logo-white justify-content-md-end justify-content-sm-center">
-                            <a href="../index.html" class=" d-flex justify-content-md-start justify-content-sm-center ">
-                                <img src="../img/redoubleLogo.svg" alt="logo redouble" height="30vh">
-                            </a>
-                            <p class="text-white text-md-start text-sm-center py-2">© 2022 redouble. Todos los derechos
-                                reservados.
-                            </p>
-                        </div>
-                        <div class="col px-3">
-                            <ul class="nav logo-white push justify-content-md-end justify-content-sm-center">
-                                <li class="nav-item mx-1"><a href="https://twitter.com/" target="_blank"> <img
-                                            src="../img/twitter.svg" alt="icono twitter" height="30vh">
-                                    </a></li>
-                                <li class="nav-item mx-1"><a href="https://www.instagram.com/?hl=es-la" target="_blank">
-                                        <img src="../img/instagram.svg" alt="icono instagram" height="30vh">
-                                    </a></li>
-                                <li class="nav-item mx-1"><a href="https://www.facebook.com/home.php" target="_blank">
-                                        <img src="../img/facebook.svg" alt="icono facebook" height="30vh">
-                                    </a></li>
-                            </ul>
-                        </div>
-                    </div>
-        </footer>
-
     </main>
+
+
+    <footer class="bg-texture">
+        <div class="container-xxl container-md container-sm bg-black px-0 pb-3">
+
+            <div class="container pt-4">
+                <div class="row row-cols-1 row-cols-xxl-2 row-cols-lg-2 row-cols-md-2 row-cols-sm-1 g-3">
+
+                    <div class="col px-3 logo-white justify-content-md-end justify-content-sm-center">
+                        <a href="../index.html" class=" d-flex justify-content-md-start justify-content-sm-center ">
+                            <img src="../img/redoubleLogo.svg" alt="logo redouble" height="30vh">
+                        </a>
+                        <p class="text-white text-md-start text-sm-center py-2">© 2022 redouble. Todos los derechos
+                            reservados.
+                        </p>
+                    </div>
+                    <div class="col px-3">
+                        <ul class="nav logo-white push justify-content-md-end justify-content-sm-center">
+                            <li class="nav-item mx-1"><a href="https://twitter.com/" target="_blank"> <img
+                                        src="../img/twitter.svg" alt="icono twitter" height="30vh">
+                                </a></li>
+                            <li class="nav-item mx-1"><a href="https://www.instagram.com/?hl=es-la" target="_blank">
+                                    <img src="../img/instagram.svg" alt="icono instagram" height="30vh">
+                                </a></li>
+                            <li class="nav-item mx-1"><a href="https://www.facebook.com/home.php" target="_blank">
+                                    <img src="../img/facebook.svg" alt="icono facebook" height="30vh">
+                                </a></li>
+                        </ul>
+                    </div>
+                </div>
+    </footer>
 
 
 
