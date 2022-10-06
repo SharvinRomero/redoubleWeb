@@ -29,6 +29,11 @@ ul {
     list-style-type: none;
 }
 
+i:hover {
+    color: white;
+}
+
+
 /*Clases*/
 
 .logo-white img {
@@ -253,6 +258,9 @@ a [href*="intent"] {
     float: none
 }
 
+i:hover {
+    color: #FF7A0B;
+}
 
 
 /*área de grilla*/
