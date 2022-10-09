@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Toda la información de los juego de mesa más populares y más jugados a nivel mundial. Redouble">
+    <meta name="keywords"
+        content="cardboards, phase 10, monopoly deal, sushi go, toma 6, redouble">
+    <link rel="shortcut icon" href="../img/favicon.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../css/styleM.css">
+    <title>Redouble | Juegos</title>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <header class="bg-texture">
+        <nav class="navbar navbar-expand-lg blur fixed-top navbar-light">
+            <div class="container-xxl container-md container-sm nav-logo">
+                <a class="navbar-brand" href="../index.html"><img src="../img/redoubleLogo.svg" alt="logo redouble"
+                        height="30vh" class="d-inline-block align-text-top"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse navegador-list" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Juegos
+                            </a>
+                            <ul class="dropdown-menu blur2" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="./gamesFamily.html">Familiar</a></li>
+                                <li><a class="dropdown-item" href="./gamesParty.html">Fiesta</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                        <li class="nav-item">
+                            <a class="nav-link" href="./new.html">Nuevos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./brand.html">Editoriales</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contact.html">Contacto</a>
+                        </li>
+                        </li>
+                    </ul>
+                    <form class="d-flex visually-hidden">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Carousel -->
+        <section class="container-xxl container-md container-sm px-0 mt-5">
+            <div id="carouselExampleSlidesOnly" class="carousel slide mt-7" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="../img/bannerGames.jpg" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+            </div>
+            <h1 class="h3 text-center text-white fw-light bg-black m-0 py-2">Juegos de cartas más búscados</h1>
+        </section>
+
+    </header>
+
+    <!-- Releases -->
+    <main class="bg-texture">
+        <section class="container-xxl container-md container-sm bg-white pb-3 px-0 ">
+            <div class="border-bottom border-dark ps-3 pt-3">
+                <h2 class="h4">Juegos populares</h2>
+            </div>
+
+
+            <!-- Juegos Familiares -->
+            <div class="h3 text-center fw-light m-0 py-5" id="family">Juegos Familiares</div>
+
+            <!-- Sushi Go -->
+            <div class="container p-4 border-grey" id="sushiGo">
+                <div class="row justify-content-md-end">
+
+                    <div class="col-xxl-3 col-lg-3 col-md-4 col-sm-12 g-2 ps-md-3">
+                        <img src="../img/gameSushGo.png" alt="sushi go box" class="w-100 contain-img">
+                        <h5 class="mt-4">Galería</h5>
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn " data-bs-toggle="modal" data-bs-target="#sushiGoModal">
+                            <img src="../img/sushiGoGallery1.jpg" alt="gallery suchi go" class="gallery-img">
+                        </button>
+                        <p class=" text-center small ">presiona la imagen para ver</p>
+                    </div>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="sushiGoModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-xl modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="exampleModalLabel">Galería</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div id="carouselSushiGo" class="carousel slide" data-bs-ride="carousel">
+                                        <div class="carousel-inner">
+                                            <div class="carousel-item active">
+                                                <img src="../img/sushiGoGallery1.jpg" class="d-block w-100"
+                                                    alt="virus collage">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="../img/sushiGoGallery2.jpg" class="d-block w-100"
+                                                    alt="todas las barajas de virus">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="../img/sushiGoGallery3.jpg" class="d-block w-100"
+                                                    alt="jugando virus">
+                                            </div>
+                                        </div>
+                                        <button class="carousel-control-prev" type="button"
+                                            data-bs-target="#carouselSushiGo" data-bs-slide="prev">
+                                            <span class="carousel-control-prev-icon btn-primary"
+                                                aria-hidden="true"></span>
+                                            <span class="visually-hidden">Previous</span>
+                                        </button>
+                                        <button class="carousel-control-next" type="button"
+                                            data-bs-target="#carouselSushiGo" data-bs-slide="next">
+                                            <span class="carousel-control-next-icon btn-primary"
+                                                aria-hidden="true"></span>
+                                            <span class="visually-hidden">Next</span>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xxl-6 col-lg-6 col-md-8 col-sm-12 g-2">
+                        <h5>Sushi Go!</h5>
+                        <ul class="nav navegador-list">
+                            <li class="nav-item fw-bold me-2">Editorial:</li>
+                            <li class="nav-item me-2">
+                                <a href="https://gamewright.com/" target="_blank">Gamewright
+                                </a>
+                            </li>
+                            <li class="nav-item me-2 fw-bold">|</li>
+                            <li class="nav-item me-2 fw-bold">Genero:</li>
+                            <li class="nav-item me-2"><a href="#" target="_blank">
+                                    Familia</a>
+                            </li>
+                            <li class="nav-item me-2 fw-bold">|</li>
+                            <li class="nav-item me-2 fw-bold">Año:</li>
+                            <li class="nav-item me-2"><a href="#" target="_blank">
+                                    2013</a>
+                            </li>
+                        </ul>
+
+                        <ul class="nav navegador-list">
+                            <li class="nav-item fw-bold me-2">Diseñadores:</li>
+                            <li class="nav-item me-2">
+                                <a href="#">Phil Walker-Harding
+                                </a>
+                            </li>
+                        </ul>
+
+                        <div class="pt-2">
+                            <p class="lh-sm">En el juego de cartas de sushi superrápido Sushi Go!, estás comiendo en un
+                                restaurante de sushi y tratando de conseguir la mejor combinación de platos de sushi a
+                                medida que pasan. Gana puntos por recolectar la mayor cantidad de rollos de sushi o
+                                hacer un juego completo de sashimi. ¡Sumerge tu nigiri favorito en wasabi para triplicar
+                                su valor! Y una vez que te lo hayas comido todo, ¡termina tu comida con todo el budín
+                                que tengas! Pero ten cuidado con qué sushi permites que tomen tus amigos; ¡podría ser
+                                justo lo que necesitan para vencerte!
+                            </p>
+                            <p class="lh-sm">
+                                Sushi ¡Vamos! toma el mecanismo de sorteo de cartas de Fairy Tale y 7 Wonders y lo
+                                destila en un juego de veinte minutos que cualquiera puede jugar. La dinámica de "draft
+                                and pass" se destaca, manteniendo las reglas al mínimo. Cuando vea las primeras manos de
+                                cartas, debe evaluar rápidamente la composición de la ronda y decidir qué tipo de sushi
+                                elegirá. Luego, en cada turno tendrás que sopesar qué cartas conservar y cuáles pasar.
+                                Las diferentes combinaciones de puntuación permiten algunas jugadas inteligentes y
+                                bloqueos desagradables. ¡Ronda tras ronda, también debes mantener la vista en el
+                                objetivo de tener la mayor cantidad de cartas de budín al final del juego!
+                            </p>
+                        </div>
+
+                    </div>
+
+                    <div class="col-xxl-3 col-lg-3 col-md-8 col-sm-12 g-2">
+
+                        <div class="col rounded-8">
+                            <h5>Revisión del juego</h5>
+                            <div class="ratio ratio-4x3">
+                                <iframe width="1024" height="768" src="https://www.youtube.com/embed/dW5RcOVyFVw"
+                                    title="Cómo jugar a Sushi Go - Devir" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen></iframe>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Toma 6 -->
+            <div class="container p-4 border-grey" id="toma6">
+                <div class="row justify-content-md-end">
+
+                    <div class="col-xxl-3 col-lg-3 col-md-4 col-sm-12 g-2 ps-md-3">
+                        <img src="../img/gameToma6.png" alt="Toma 6 box" class="w-100 contain-img">
+                        <h5 class="mt-4">Galería</h5>
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn " data-bs-toggle="modal" data-bs-target="#toma6Modal">
+                            <img src="../img/toma6Gallery1.jpg" alt="gallery toma 6" class="gallery-img">
+                        </button>
+                        <p class=" text-center small ">presiona la imagen para ver</p>
+                    </div>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="toma6Modal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-xl modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="exampleModalLabel">Galería</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div id="carouselToma6" class="carousel slide" data-bs-ride="carousel">
+                                        <div class="carousel-inner">
+                                            <div class="carousel-item active">
+                                                <img src="../img/toma6Gallery1.jpg" class="d-block w-100" alt="toma 6">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="../img/toma6Gallery2.jpg" class="d-block w-100"
+                                                    alt="todas las barajas de toma 6">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="../img/toma6Gallery3.jpg" class="d-block w-100"
+                                                    alt="jugando toma 6">
+                                            </div>
+                                        </div>
+                                        <button class="carousel-control-prev" type="button"
+                                            data-bs-target="#carouselToma6" data-bs-slide="prev">
+                                            <span class="carousel-control-prev-icon btn-primary"
+                                                aria-hidden="true"></span>
+                                            <span class="visually-hidden">Previous</span>
+                                        </button>
+                                        <button class="carousel-control-next" type="button"
+                                            data-bs-target="#carouselToma6" data-bs-slide="next">
+                                            <span class="carousel-control-next-icon btn-primary"
+                                                aria-hidden="true"></span>
+                                            <span class="visually-hidden">Next</span>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xxl-6 col-lg-6 col-md-8 col-sm-12 g-2">
+                        <h5>Toma 6</h5>
+                        <ul class="nav navegador-list">
+                            <li class="nav-item fw-bold me-2">Editorial:</li>
+                            <li class="nav-item me-2">
+                                <a href="https://www.bureaudejuegos.com/" target="_blank">Bureau de Juegos
+                                </a>
+                            </li>
+                            <li class="nav-item me-2 fw-bold">|</li>
+                            <li class="nav-item me-2 fw-bold">Genero:</li>
+                            <li class="nav-item me-2"><a href="#" target="_blank">
+                                    Familia</a>
+                            </li>
+                            <li class="nav-item me-2 fw-bold">|</li>
+                            <li class="nav-item me-2 fw-bold">Año:</li>
+                            <li class="nav-item me-2"><a href="#" target="_blank">
+                                    1994</a>
+                            </li>
+                        </ul>
+
+                        <ul class="nav navegador-list">
+                            <li class="nav-item fw-bold me-2">Diseñadores:</li>
+                            <li class="nav-item me-2">
+                                <a href="#">Wolfgang Kramer
+                                </a>
+                            </li>
+                        </ul>
+
+                        <div class="pt-2">
+                            <p class="lh-sm">
+                                Para jugar, se barajan las cartas de 104 números, se colocan cuatro cartas boca arriba
+                                para comenzar las cuatro filas y luego se reparten diez cartas a cada jugador. Cada
+                                turno, los jugadores eligen y revelan simultáneamente una carta de su mano, luego
+                                agregan las cartas a las filas, y las cartas se colocan en orden ascendente según su
+                                número; específicamente, cada tarjeta se coloca en la fila que termina con el número más
+                                alto que está debajo del número de la tarjeta. Cuando se coloca la sexta carta en una
+                                fila, el propietario de esa carta reclama las otras cinco cartas y la sexta carta se
+                                convierte en la primera carta de una nueva fila.
+                            </p>
+                            <p class="lh-sm">
+                                Además de un número del 1 al 104, cada carta tiene un valor en puntos. Después de
+                                terminar diez rondas, los jugadores cuentan su puntuación y ven si el juego termina. (La
+                                categoría 5 termina cuando un jugador tiene una puntuación superior a 74, por ejemplo,
+                                mientras que 6 nimmt! termina cuando alguien supera los 66). Cuando esto sucede, ¡el
+                                jugador con la menor cantidad de puntos gana!
+                            </p>
+                        </div>
+
+                    </div>
+
+                    <div class="col-xxl-3 col-lg-3 col-md-8 col-sm-12 g-2">
+
+                        <div class="col rounded-8">
+                            <h5>Revisión del juego</h5>
+                            <div class="ratio ratio-4x3">
+                                <iframe width="1024" height="768" src="https://www.youtube.com/embed/XTTGc52KYZY"
+                                    title="Toma 6 | 6 Nimmt | Tutorial | Bureau de Juegos | Wolfgang Kramer | Partida de Locos |"
+                                    frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen></iframe>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Phase 10 -->
+            <div class="container p-4 border-grey" id="phase10">
+                <div class="row justify-content-md-end">
+
+                    <div class="col-xxl-3 col-lg-3 col-md-4 col-sm-12 g-2 ps-md-3">
+                        <img src="../img/gamePhase10.png" alt="Toma 6 box" class="w-100 contain-img">
+                        <h5 class="mt-4">Galería</h5>
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn " data-bs-toggle="modal" data-bs-target="#phase10Modal">
+                            <img src="../img/phase10Gallery1.jpg" alt="gallery phase 10" class="gallery-img">
+                        </button>
+                        <p class=" text-center small ">presiona la imagen para ver</p>
+                    </div>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="phase10Modal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-xl modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="exampleModalLabel">Galería</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div id="carouselPhase10" class="carousel slide" data-bs-ride="carousel">
+                                        <div class="carousel-inner">
+                                            <div class="carousel-item active">
+                                                <img src="../img/phase10Gallery1.jpg" class="d-block w-100"
+                                                    alt="phase 10">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="../img/phase10Gallery2.jpg" class="d-block w-100"
+                                                    alt="todas las barajas de phase 10">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="../img/phase10Gallery3.jpg" class="d-block w-100"
+                                                    alt="jugando phase 10">
+                                            </div>
+                                        </div>
+                                        <button class="carousel-control-prev" type="button"
+                                            data-bs-target="#carouselPhase10" data-bs-slide="prev">
+                                            <span class="carousel-control-prev-icon btn-primary"
+                                                aria-hidden="true"></span>
+                                            <span class="visually-hidden">Previous</span>
+                                        </button>
+                                        <button class="carousel-control-next" type="button"
+                                            data-bs-target="#carouselPhase10" data-bs-slide="next">
+                                            <span class="carousel-control-next-icon btn-primary"
+                                                aria-hidden="true"></span>
+                                            <span class="visually-hidden">Next</span>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xxl-6 col-lg-6 col-md-8 col-sm-12 g-2">
+                        <h5>Phase 10</h5>
+                        <ul class="nav navegador-list">
+                            <li class="nav-item fw-bold me-2">Editorial:</li>
+                            <li class="nav-item me-2">
+                                <a href="https://shop.mattel.com/collections/mattel-games" target="_blank">Mattel Games
+                                </a>
+                            </li>
+                            <li class="nav-item me-2 fw-bold">|</li>
+                            <li class="nav-item me-2 fw-bold">Genero:</li>
+                            <li class="nav-item me-2"><a href="#" target="_blank">
+                                    Familia</a>
+                            </li>
+                            <li class="nav-item me-2 fw-bold">|</li>
+                            <li class="nav-item me-2 fw-bold">Año:</li>
+                            <li class="nav-item me-2"><a href="#" target="_blank">
+                                    1982</a>
+                            </li>
+                        </ul>
+
+                        <ul class="nav navegador-list">
+                            <li class="nav-item fw-bold me-2">Diseñadores:</li>
+                            <li class="nav-item me-2">
+                                <a href="#">Ken Johnson
+                                </a>
+                            </li>
+                        </ul>
+
+                        <div class="pt-2">
+                            <p class="lh-sm">
+                                Un juego de cartas tipo rummy donde los jugadores compiten por ser los primeros en
+                                terminar de completar las diez fases. Las fases incluyen la recopilación de series de
+                                números, la recopilación de cierto número de cartas de un color determinado, etc. El
+                                primer jugador que termine de completar la décima fase gana. En caso de empate, gana el
+                                jugador con el menor número de puntos.
+                            </p>
+                        </div>
+
+                    </div>
+
+                    <div class="col-xxl-3 col-lg-3 col-md-8 col-sm-12 g-2">
+
+                        <div class="col rounded-8">
+                            <h5>Revisión del juego</h5>
+                            <div class="ratio ratio-4x3">
+                                <iframe width="1024" height="768" src="https://www.youtube.com/embed/IWJUxLfuDic"
+                                    title="Cómo Jugar Fase 10 Phase 10 l Repaso Rápido de las Reglas en Menos de 3 Minutos"
+                                    frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen></iframe>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Monopoly Deal -->
+            <div class="container p-4" id="monopolyDeal">
+                <div class="row justify-content-md-end">
+
+                    <div class="col-xxl-3 col-lg-3 col-md-4 col-sm-12 g-2 ps-md-3">
+                        <img src="../img/gameMonopolyDeal.png" alt="monopoly deal box" class="w-100 contain-img">
+                        <h5 class="mt-4">Galería</h5>
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn " data-bs-toggle="modal" data-bs-target="#monopolyDealModal">
+                            <img src="../img/monopolyDealGallery1.jpg" alt="monopoly deal gallery" class="gallery-img">
+                        </button>
+                        <p class=" text-center small ">presiona la imagen para ver</p>
+                    </div>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="monopolyDealModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-xl modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="exampleModalLabel">Galería</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div id="carouselMonopolyDeal" class="carousel slide" data-bs-ride="carousel">
+                                        <div class="carousel-inner">
+                                            <div class="carousel-item active">
+                                                <img src="../img/monopolyDealGallery1.jpg" class="d-block w-100"
+                                                    alt="Monopoly Deal collage">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="../img/monopolyDealGallery2.jpg" class="d-block w-100"
+                                                    alt="todas las barajas de Monopoly Deal">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="../img/monopolyDealGallery3.jpg" class="d-block w-100"
+                                                    alt="jugando Monopoly Deal">
+                                            </div>
+                                        </div>
+                                        <button class="carousel-control-prev" type="button"
+                                            data-bs-target="#carouselMonopolyDeal" data-bs-slide="prev">
+                                            <span class="carousel-control-prev-icon btn-primary"
+                                                aria-hidden="true"></span>
+                                            <span class="visually-hidden">Previous</span>
+                                        </button>
+                                        <button class="carousel-control-next" type="button"
+                                            data-bs-target="#carouselMonopolyDeal" data-bs-slide="next">
+                                            <span class="carousel-control-next-icon btn-primary"
+                                                aria-hidden="true"></span>
+                                            <span class="visually-hidden">Next</span>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xxl-6 col-lg-6 col-md-8 col-sm-12 g-2">
+                        <h5>Monopoly Deal</h5>
+                        <ul class="nav navegador-list">
+                            <li class="nav-item fw-bold me-2">Editorial:</li>
+                            <li class="nav-item me-2">
+                                <a href="https://hasbrogaming.hasbro.com/es-lam" target="_blank">Hasbro Gaming
+                                </a>
+                            </li>
+                            <li class="nav-item me-2 fw-bold">|</li>
+                            <li class="nav-item me-2 fw-bold">Genero:</li>
+                            <li class="nav-item me-2"><a href="#" target="_blank">
+                                    Familia</a>
+                            </li>
+                            <li class="nav-item me-2 fw-bold">|</li>
+                            <li class="nav-item me-2 fw-bold">Año:</li>
+                            <li class="nav-item me-2"><a href="#" target="_blank">
+                                    2008</a>
+                            </li>
+                        </ul>
+
+                        <ul class="nav navegador-list">
+                            <li class="nav-item fw-bold me-2">Diseñadores:</li>
+                            <li class="nav-item me-2">
+                                <a href="#">Katharine Chapman
+                                </a>
+                            </li>
+                        </ul>
+
+                        <div class="pt-2">
+                            <p class="lh-sm">¡El juego de cartas adictivo y de ritmo rápido en el que tu suerte puede
+                                cambiar en el juego de una carta! Reúna 3 conjuntos completos de propiedades, pero tenga
+                                cuidado con los cobradores de deudas, los tratos forzados y los temidos Deal Breakers,
+                                ¡que podrían cambiar su suerte en cualquier momento!
+                            </p>
+                            <p class="lh-sm">Las cartas de acción se pueden jugar para iniciar la acción impresa en la
+                                carta o se pueden usar como dinero del valor indicado en las esquinas superior izquierda
+                                e inferior derecha.
+                                Algunas tarjetas de propiedad indican una propiedad específica y otras son comodines.
+                                Muestran el nombre de la propiedad, el conjunto al que pertenecen (o en qué conjuntos se
+                                pueden usar), los costos de alquiler, el número de propiedades en su conjunto y su valor
+                                cuando se usan para realizar pagos.
+                                Las tarjetas de casa/hotel se pueden usar para aumentar el costo de alquiler de un
+                                conjunto de propiedades. También tienen un valor monetario para su uso en la realización
+                                de pagos.
+                                Las tarjetas de dinero se utilizan para realizar pagos.
+                            </p>
+                            <p class="lh-sm">Saca dos cartas de la pila de sorteo o, si comienzas tu turno sin cartas,
+                                saca cinco.
+                                Juega hasta tres cartas de tu mano boca arriba ya sea como: dinero en tu banco,
+                                propiedades o mejoras en tu colección, o acciones. Las cartas de acción te permiten
+                                cobrar alquileres, recibir dinero, tomar propiedades de otros o cancelar otra acción.
+                                Las tarjetas depositadas en su banco sólo podrán utilizarse como dinero. Cuando deba
+                                realizar un pago, puede usar dinero de su banco o propiedades y mejoras en su colección,
+                                pero no tarjetas en su mano.
+                                Deseche las cartas que superen las siete de su mano y colóquelas en el fondo de la pila
+                                para robar.
+                            </p>
+                        </div>
+
+                    </div>
+
+                    <div class="col-xxl-3 col-lg-3 col-md-8 col-sm-12 g-2">
+
+                        <div class="col rounded-8">
+                            <h5>Revisión del juego</h5>
+                            <div class="ratio ratio-4x3">
+                                <iframe width="1024" height="768" src="https://www.youtube.com/embed/DAw_EhrbQK0"
+                                    title="Cómo jugar Monopoly Deal en 3 minutos (Monopoly + Card Game)" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <footer class="bg-texture">
+        <div class="container-xxl container-md container-sm bg-black px-0 pb-3">
+
+            <div class="container pt-4">
+                <div class="row row-cols-1 row-cols-xxl-2 row-cols-lg-2 row-cols-md-2 row-cols-sm-1 g-3">
+
+                    <div class="col px-3 logo-white justify-content-md-end justify-content-sm-center">
+                        <a href="../index.html" class=" d-flex justify-content-md-start justify-content-sm-center ">
+                            <img src="../img/redoubleLogo.svg" alt="logo redouble" height="30vh">
+                        </a>
+                        <p class="text-white text-md-start text-sm-center py-2">© 2022 redouble. Todos los derechos
+                            reservados.
+                        </p>
+                    </div>
+                    <div class="col px-3">
+                        <ul class="nav logo-white justify-content-md-end justify-content-sm-center">
+                            <li class="nav-item mx-2"><a href="https://twitter.com/" target="_blank">
+                                    <i class="bi bi-twitter fs-5"></i>
+                                </a></li>
+                            <li class="nav-item mx-2"><a href="https://www.instagram.com/?hl=es-la" target="_blank">
+                                    <i class="bi bi-instagram fs-5"></i>
+                                </a></li>
+                            <li class="nav-item mx-2"><a href="https://www.facebook.com/home.php" target="_blank">
+                                    <i class="bi bi-facebook fs-5"></i>
+                                </a></li>
+                        </ul>
+                    </div>
+                </div>
+    </footer>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -6,7 +6,6 @@
 
 /* Tipografia */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css");
 
 /* Etiquetado base */
 
@@ -50,6 +49,10 @@ i {
 
 .bg-black {
     background-color: black;
+}
+
+.bg-orange {
+    background: linear-gradient(180deg, rgba(255, 156, 11, 1) 0%, rgba(255, 122, 11, 1) 100%) no-repeat;
 }
 
 .bg-texture {
@@ -110,6 +113,13 @@ i {
     object-fit: contain;
 }
 
+.gallery-img {
+    display: flex;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
 .cover {
     width: auto;
     height: 300px;
@@ -117,6 +127,7 @@ i {
     object-position: 10% 10%;
     border-radius: 4px;
 }
+
 
 .card-brand {
     width: 64px;
@@ -197,8 +208,15 @@ a [href*="intent"] {
     color: white;
 }
 
+.bullets li {
+    list-style: disc;
+}
 
 /* hovers */
+.bg-orange:hover {
+    background: black;
+    color: white;
+}
 
 .navegador-list a:hover {
     color: #FF7A0B !important;
@@ -283,7 +301,8 @@ i:hover {
     grid-template-rows: 1fr;
     gap: 16px;
     justify-items: center;
-    margin: 16px;
+    margin: 0px 16px 16px 16px;
+    padding: 1.5em;
 }
 
 .pics img {
@@ -291,6 +310,7 @@ i:hover {
     width: auto;
     height: 128px;
 }
+
 
 /* Media Query */
 
@@ -313,6 +333,11 @@ i:hover {
         height: 128px;
     }
 
+    .gallery-img {
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+    }
 }
 
 @media (min-width: 768px) {
@@ -333,12 +358,19 @@ i:hover {
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 16px;
-        margin: 16px;
+        margin: 0px 16px 16px 16px;
+        padding: 1.5em;
     }
 
     .pics img {
         display: flex;
         height: 128px;
+    }
+
+    .gallery-img {
+        width: 100%;
+        height: auto;
+        object-fit: contain;
     }
 }
 
@@ -352,11 +384,17 @@ i:hover {
     .container-father {
         padding: 1.5em;
         grid-template-columns: 1fr 1fr;
-        margin: 16px;
+        margin: 0px 16px 16px 16px;
     }
 
     .pics img {
         display: flex;
         height: 128px;
+    }
+
+    .gallery-img {
+        width: 100%;
+        height: auto;
+        object-fit: contain;
     }
 }

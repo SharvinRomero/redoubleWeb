@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Toda la información de los juego de mesa más populares y más jugados a nivel mundial. Redouble">
+    <meta name="keywords"
+        content="cardboards, uno, virus, red7, go nuts for donuts, redouble">
+    <link rel="shortcut icon" href="../img/favicon.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../css/styleM.css">
+    <title>Redouble | Juegos</title>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <header class="bg-texture">
+        <nav class="navbar navbar-expand-lg blur fixed-top navbar-light">
+            <div class="container-xxl container-md container-sm nav-logo">
+                <a class="navbar-brand" href="../index.html"><img src="../img/redoubleLogo.svg" alt="logo redouble"
+                        height="30vh" class="d-inline-block align-text-top"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse navegador-list" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Juegos
+                            </a>
+                            <ul class="dropdown-menu blur2" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="./gamesFamily.html">Familiar</a></li>
+                                <li><a class="dropdown-item" href="./gamesParty.html">Fiesta</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                        <li class="nav-item">
+                            <a class="nav-link" href="./new.html">Nuevos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./brand.html">Editoriales</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contact.html">Contacto</a>
+                        </li>
+                        </li>
+                    </ul>
+                    <form class="d-flex visually-hidden">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Carousel -->
+        <section class="container-xxl container-md container-sm px-0 mt-5">
+            <div id="carouselExampleSlidesOnly" class="carousel slide mt-7" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="../img/bannerGames.jpg" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+            </div>
+            <h1 class="h3 text-center text-white fw-light bg-black m-0 py-2">Juegos de cartas más búscados</h1>
+        </section>
+
+    </header>
+
+    <!-- Releases -->
+    <main class="bg-texture">
+        <section class="container-xxl container-md container-sm bg-white pb-3 px-0 ">
+            <div class="border-bottom border-dark ps-3 pt-3">
+                <h2 class="h4">Juegos populares</h2>
+            </div>
+
+
+            <!-- Juegos Fiesta -->
+            <div class="h3 text-center fw-light m-0 py-5" id="party">Juegos Fiesta</div>
+
+            <!-- Virus -->
+            <div class="container p-4 border-grey" id="virus">
+                <div class="row justify-content-md-end">
+
+                    <div class="col-xxl-3 col-lg-3 col-md-4 col-sm-12 g-2 ps-md-3">
+                        <img src="../img/gameVirus.png" alt="virus box" class="w-100 contain-img">
+                        <h5 class="mt-4">Galería</h5>
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn " data-bs-toggle="modal" data-bs-target="#virusModal">
+                            <img src="../img/virusGallery1.jpg" alt="gallery virus" class="gallery-img">
+                        </button>
+                        <p class=" text-center small ">presiona la imagen para ver</p>
+                    </div>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="virusModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-xl modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="exampleModalLabel">Galería</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div id="carouselVirus" class="carousel slide" data-bs-ride="carousel">
+                                        <div class="carousel-inner">
+                                            <div class="carousel-item active">
+                                                <img src="../img/virusGallery1.jpg" class="d-block w-100"
+                                                    alt="virus collage">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="../img/virusGallery2.jpg" class="d-block w-100"
+                                                    alt="todas las barajas de virus">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="../img/virusGallery3.jpg" class="d-block w-100"
+                                                    alt="jugando virus">
+                                            </div>
+                                        </div>
+                                        <button class="carousel-control-prev" type="button"
+                                            data-bs-target="#carouselVirus" data-bs-slide="prev">
+                                            <span class="carousel-control-prev-icon btn-primary"
+                                                aria-hidden="true"></span>
+                                            <span class="visually-hidden">Previous</span>
+                                        </button>
+                                        <button class="carousel-control-next" type="button"
+                                            data-bs-target="#carouselVirus" data-bs-slide="next">
+                                            <span class="carousel-control-next-icon btn-primary"
+                                                aria-hidden="true"></span>
+                                            <span class="visually-hidden">Next</span>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xxl-6 col-lg-6 col-md-8 col-sm-12 g-2">
+                        <h5>Virus!</h5>
+                        <ul class="nav navegador-list">
+                            <li class="nav-item fw-bold me-2">Editorial:</li>
+                            <li class="nav-item me-2">
+                                <a href="https://tranjisgames.com/" target="_blank">Tranjis
+                                </a>
+                            </li>
+                            <li class="nav-item me-2 fw-bold">|</li>
+                            <li class="nav-item me-2 fw-bold">Genero:</li>
+                            <li class="nav-item me-2"><a href="#" target="_blank">
+                                    Fiesta</a>
+                            </li>
+                            <li class="nav-item me-2 fw-bold">|</li>
+                            <li class="nav-item me-2 fw-bold">Año:</li>
+                            <li class="nav-item me-2"><a href="#" target="_blank">
+                                    2016</a>
+                            </li>
+                        </ul>
+
+                        <ul class="nav navegador-list">
+                            <li class="nav-item fw-bold me-2">Diseñadores:</li>
+                            <li class="nav-item me-2">
+                                <a href="#">Domingo Cabrero,
+                                </a>
+                            </li>
+                            <li class="nav-item me-2">
+                                <a href="#">Carlos López,
+                                </a>
+                            </li>
+                            <li class="nav-item me-2">
+                                <a href="#">Santi Santisteban
+                                </a>
+                            </li>
+                        </ul>
+
+                        <div class="pt-2">
+                            <p class="lh-sm">¡Los brotes de virus experimentales se han escapado del laboratorio y solo
+                                tú puedes detenerlos!
+                                Enfréntate a la pandemia y compite por ser el primero en erradicar el virus aislando
+                                uncuerpo
+                                sano. Éticos o no, todos los medios a tu alcance son válidos para alcanzar la victoria.
+                                Usa tu ingenio para boicotear los esfuerzos de tus rivales y ganar.
+                            </p>
+                            <p class="lh-sm">¡Cada turno en Virus! o juegas una carta o descartas cualquier cantidad de
+                                cartas, luego repones tu mano a tres cartas. Las cartas pueden ser:
+                            </p>
+                            <ol class="bullets">
+                                <li>Uno de los cuatro órganos (o el órgano bromista)</li>
+                                <li>Uno de los cuatro virus (específico de cada órgano o el virus bromista)</li>
+                                <li>Una de las cuatro píldoras (específicas para cada órgano o la píldora comodín)</li>
+                                <li>Una carta de acción especial</li>
+                            </ol>
+                            <p class="lh-sm">
+                                Solo puedes tocar uno de cada órgano en tu área de jugador. Las píldoras y los virus se
+                                pueden
+                                reproducir en los órganos de cualquier jugador, pero solo en el órgano del mismo color.
+                                Una
+                                segunda pastilla en cualquier órgano lo inmuniza contra la infección. Tu objetivo es ser
+                                el
+                                primero en tener cuatro órganos sanos frente a ti.
+                            </p>
+                        </div>
+
+                    </div>
+
+                    <div class="col-xxl-3 col-lg-3 col-md-8 col-sm-12 g-2">
+
+                        <div class="col rounded-8">
+                            <h5>Revisión del juego</h5>
+                            <div class="ratio ratio-4x3">
+                                <iframe width="1024" height="768" src="https://www.youtube.com/embed/586FW8SOv9c"
+                                    title="Virus: Cómo jugar" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen></iframe>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Locos por las donas -->
+            <div class="container p-4 border-grey" id="goNutsForDonuts">
+                <div class="row justify-content-md-end">
+
+                    <div class="col-xxl-3 col-lg-3 col-md-4 col-sm-12 g-2 ps-md-3">
+                        <img src="../img/gameGoNutsForDonuts.png" alt="go nuts for donuts gallery box"
+                            class="w-100 contain-img">
+                        <h5 class="mt-4">Galería</h5>
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn " data-bs-toggle="modal"
+                            data-bs-target="#goNutsForDonutsModal">
+                            <img src="../img/goNutsForDonutsGallery1.jpg" alt="gallery go nuts for donuts gallery"
+                                class="gallery-img">
+                        </button>
+                        <p class=" text-center small ">presiona la imagen para ver</p>
+                    </div>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="goNutsForDonutsModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-xl modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="exampleModalLabel">Galería</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div id="carouselgoNutsForDonuts" class="carousel slide" data-bs-ride="carousel">
+                                        <div class="carousel-inner">
+                                            <div class="carousel-item active">
+                                                <img src="../img/goNutsForDonutsGallery1.jpg" class="d-block w-100"
+                                                    alt="Go Nuts For Donuts collage">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="../img/goNutsForDonutsGallery2.jpg" class="d-block w-100"
+                                                    alt="todas las barajas de Go Nuts For Donuts">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="../img/goNutsForDonutsGallery3.jpg" class="d-block w-100"
+                                                    alt="jugando Go Nuts For Donuts">
+                                            </div>
+                                        </div>
+                                        <button class="carousel-control-prev" type="button"
+                                            data-bs-target="#carouselgoNutsForDonuts" data-bs-slide="prev">
+                                            <span class="carousel-control-prev-icon btn-primary"
+                                                aria-hidden="true"></span>
+                                            <span class="visually-hidden">Previous</span>
+                                        </button>
+                                        <button class="carousel-control-next" type="button"
+                                            data-bs-target="#carouselgoNutsForDonuts" data-bs-slide="next">
+                                            <span class="carousel-control-next-icon btn-primary"
+                                                aria-hidden="true"></span>
+                                            <span class="visually-hidden">Next</span>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xxl-6 col-lg-6 col-md-8 col-sm-12 g-2">
+                        <h5>Locos por las donas!</h5>
+                        <ul class="nav navegador-list">
+                            <li class="nav-item fw-bold me-2">Editorial:</li>
+                            <li class="nav-item me-2">
+                                <a href="https://gamewright.com/" target="_blank">Gamewright
+                                </a>
+                            </li>
+                            <li class="nav-item me-2 fw-bold">|</li>
+                            <li class="nav-item me-2 fw-bold">Genero:</li>
+                            <li class="nav-item me-2"><a href="#" target="_blank">
+                                    Fiesta</a>
+                            </li>
+                            <li class="nav-item me-2 fw-bold">|</li>
+                            <li class="nav-item me-2 fw-bold">Año:</li>
+                            <li class="nav-item me-2"><a href="#" target="_blank">
+                                    2017</a>
+                            </li>
+                        </ul>
+
+                        <ul class="nav navegador-list">
+                            <li class="nav-item fw-bold me-2">Diseñadores:</li>
+                            <li class="nav-item me-2">
+                                <a href="#">Zachary Eagle
+                                </a>
+                            </li>
+                        </ul>
+
+                        <div class="pt-2">
+                            <p class="lh-sm">Locos por las donas es un juego de cartas de ritmo rápido para todos los
+                                jugadores con solo una pizca de estrategia. Sé más astuto que tus oponentes y recoge
+                                donas recién salidas del horno para ganar puntos. Pero cuidado, si dos jugadores van
+                                tras el mismo donut, ¡nadie lo consigue!
+                            </p>
+                            <p class="lh-sm">
+                                En Locos por las donas, los jugadores colocan donas del mazo igual a la cantidad de
+                                jugadores más uno. Cada jugador tiene una tarjeta de número para cada dona que está
+                                fuera. Todos los jugadores eligen una dona que quieren colocando una de sus tarjetas de
+                                números boca abajo sobre la mesa. Los jugadores revelan simultáneamente su número. Si
+                                dos o más jugadores tienen números iguales, esa dona se descarta y nadie la obtiene. Si
+                                eres el único jugador que pujó por la dona, la tomas y la colocas boca arriba frente a
+                                ti. Recoge conjuntos, donas únicas y poderosas y pares de donas para maximizar los
+                                puntos.
+                            </p>
+                        </div>
+
+                    </div>
+
+                    <div class="col-xxl-3 col-lg-3 col-md-8 col-sm-12 g-2">
+
+                        <div class="col rounded-8">
+                            <h5>Revisión del juego</h5>
+                            <div class="ratio ratio-4x3">
+                                <iframe width="1024" height="768" src="https://www.youtube.com/embed/hIobN6FND_I"
+                                    title="Locos por las Donuts | Tutorial | TopToys | Zachary Eagle | Partida de Locos |"
+                                    frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Uno -->
+            <div class="container p-4 border-grey" id="uno">
+                <div class="row justify-content-md-end">
+
+                    <div class="col-xxl-3 col-lg-3 col-md-4 col-sm-12 g-2 ps-md-3">
+                        <img src="../img/gameUno.png" alt="uno box" class="w-100 contain-img">
+                        <h5 class="mt-4">Galería</h5>
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn " data-bs-toggle="modal" data-bs-target="#unoModal">
+                            <img src="../img/unoGallery1.jpg" alt="uno gallery" class="gallery-img">
+                        </button>
+                        <p class=" text-center small ">presiona la imagen para ver</p>
+                    </div>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="unoModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-xl modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="exampleModalLabel">Galería</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div id="carouselUno" class="carousel slide" data-bs-ride="carousel">
+                                        <div class="carousel-inner">
+                                            <div class="carousel-item active">
+                                                <img src="../img/unoGallery1.jpg" class="d-block w-100"
+                                                    alt="Uno collage">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="../img/unoGallery2.jpg" class="d-block w-100"
+                                                    alt="todas las barajas de Uno">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="../img/unoGallery3.jpg" class="d-block w-100"
+                                                    alt="jugando Uno">
+                                            </div>
+                                        </div>
+                                        <button class="carousel-control-prev" type="button"
+                                            data-bs-target="#carouselUno" data-bs-slide="prev">
+                                            <span class="carousel-control-prev-icon btn-primary"
+                                                aria-hidden="true"></span>
+                                            <span class="visually-hidden">Previous</span>
+                                        </button>
+                                        <button class="carousel-control-next" type="button"
+                                            data-bs-target="#carouselUno" data-bs-slide="next">
+                                            <span class="carousel-control-next-icon btn-primary"
+                                                aria-hidden="true"></span>
+                                            <span class="visually-hidden">Next</span>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xxl-6 col-lg-6 col-md-8 col-sm-12 g-2">
+                        <h5>Uno Original</h5>
+                        <ul class="nav navegador-list">
+                            <li class="nav-item fw-bold me-2">Editorial:</li>
+                            <li class="nav-item me-2">
+                                <a href="https://shop.mattel.com/collections/mattel-games" target="_blank">Mattel Games
+                                </a>
+                            </li>
+                            <li class="nav-item me-2 fw-bold">|</li>
+                            <li class="nav-item me-2 fw-bold">Genero:</li>
+                            <li class="nav-item me-2"><a href="#" target="_blank">
+                                    Fiesta</a>
+                            </li>
+                            <li class="nav-item me-2 fw-bold">|</li>
+                            <li class="nav-item me-2 fw-bold">Año:</li>
+                            <li class="nav-item me-2"><a href="#" target="_blank">
+                                    1971</a>
+                            </li>
+                        </ul>
+
+                        <ul class="nav navegador-list">
+                            <li class="nav-item fw-bold me-2">Diseñadores:</li>
+                            <li class="nav-item me-2">
+                                <a href="#">Merle Robbins
+                                </a>
+                            </li>
+                        </ul>
+
+                        <div class="pt-2">
+                            <p class="lh-sm">Los jugadores corren para vaciar sus manos y atrapar a los jugadores
+                                contrarios con cartas en las suyas, que ganan puntos. Por turnos, los jugadores intentan
+                                jugar una carta haciendo coincidir su color, número o palabra con la carta superior en
+                                la pila de descarte. Si no pueden jugar, los jugadores roban una carta de la pila de
+                                robo y, si aún no pueden jugar, pasan su turno. Los comodines y las cartas especiales
+                                animan un poco las cosas.
+                            </p>
+                            <p class="lh-sm">
+                                El primer jugador es normalmente el jugador a la izquierda de la banca (también puedes
+                                elegir el jugador más joven) y el juego suele seguir el sentido de las agujas del reloj.
+                                Cada jugador ve sus cartas y trata de igualar la carta de la Pila de Descartes.
+                                Debe coincidir con el número, el color o el símbolo/Acción. Por ejemplo, si la Pila de
+                                Descarte tiene una tarjeta roja que es un 8, tienes que poner una tarjeta roja o una
+                                tarjeta con un 8. También puede jugar un comodín (que puede alterar el color actual del
+                                juego).
+                                Si el jugador no tiene coincidencias o elige no jugar ninguna de sus cartas aunque tenga
+                                una coincidencia, debe robar una carta del montón de Cartas de Robo. Si esa carta puede
+                                ser jugada… juégala. De lo contrario, guarda la carta y el juego pasa a la siguiente
+                                persona por turno. También puedes jugar una carta salvaje o una carta de elegir 4
+                                colores en tu turno.
+                            </p>
+                        </div>
+
+                    </div>
+
+                    <div class="col-xxl-3 col-lg-3 col-md-8 col-sm-12 g-2">
+
+                        <div class="col rounded-8">
+                            <h5>Revisión del juego</h5>
+                            <div class="ratio ratio-4x3">
+                                <iframe width="1024" height="768" src="https://www.youtube.com/embed/DQzOvL87vss"
+                                    title="UNO | Cómo se juega" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Red 7 -->
+            <div class="container p-4" id="red7">
+                <div class="row justify-content-md-end">
+
+                    <div class="col-xxl-3 col-lg-3 col-md-4 col-sm-12 g-2 ps-md-3">
+                        <img src="../img/gamered7.png" alt="red7 box" class="w-100 contain-img">
+                        <h5 class="mt-4">Galería</h5>
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn " data-bs-toggle="modal" data-bs-target="#red7Modal">
+                            <img src="../img/red7Gallery1.jpg" alt="red7 gallery" class="gallery-img">
+                        </button>
+                        <p class=" text-center small ">presiona la imagen para ver</p>
+                    </div>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="red7Modal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-xl modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="exampleModalLabel">Galería</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div id="carouselred7" class="carousel slide" data-bs-ride="carousel">
+                                        <div class="carousel-inner">
+                                            <div class="carousel-item active">
+                                                <img src="../img/red7Gallery1.jpg" class="d-block w-100"
+                                                    alt="red7 collage">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="../img/red7Gallery2.jpg" class="d-block w-100"
+                                                    alt="todas las barajas de red7">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="../img/red7Gallery3.jpg" class="d-block w-100"
+                                                    alt="jugando red7">
+                                            </div>
+                                        </div>
+                                        <button class="carousel-control-prev" type="button"
+                                            data-bs-target="#carouselred7" data-bs-slide="prev">
+                                            <span class="carousel-control-prev-icon btn-primary"
+                                                aria-hidden="true"></span>
+                                            <span class="visually-hidden">Previous</span>
+                                        </button>
+                                        <button class="carousel-control-next" type="button"
+                                            data-bs-target="#carouselred7" data-bs-slide="next">
+                                            <span class="carousel-control-next-icon btn-primary"
+                                                aria-hidden="true"></span>
+                                            <span class="visually-hidden">Next</span>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xxl-6 col-lg-6 col-md-8 col-sm-12 g-2">
+                        <h5>Red7</h5>
+                        <ul class="nav navegador-list">
+                            <li class="nav-item fw-bold me-2">Editorial:</li>
+                            <li class="nav-item me-2">
+                                <a href="https://asmadigames.com/" target="_blank">Asmadi Games / Bureau de Juegos
+                                </a>
+                            </li>
+                            <li class="nav-item me-2 fw-bold">|</li>
+                            <li class="nav-item me-2 fw-bold">Genero:</li>
+                            <li class="nav-item me-2"><a href="#" target="_blank">
+                                    Fiesta</a>
+                            </li>
+                            <li class="nav-item me-2 fw-bold">|</li>
+                            <li class="nav-item me-2 fw-bold">Año:</li>
+                            <li class="nav-item me-2"><a href="#" target="_blank">
+                                    2014</a>
+                            </li>
+                        </ul>
+
+                        <ul class="nav navegador-list">
+                            <li class="nav-item fw-bold me-2">Diseñadores:</li>
+                            <li class="nav-item me-2">
+                                <a href="#">Carl Chudyk,
+                                </a>
+                            </li>
+                            <li class="nav-item me-2">
+                                <a href="#">Chris Cieslik
+                                </a>
+                            </li>
+                        </ul>
+
+                        <div class="pt-2">
+                            <p class="lh-sm">Las reglas de "Red" son simples: ¡gana la carta más alta! Pero "Red" es
+                                solo uno de los
+                                siete juegos que jugarás en Red7, y si no estás ganando el juego actual al final de tu
+                                turno, ¡estás
+                                fuera! La última persona en pie gana la ronda.
+                            </p>
+                            <p class="lh-sm">La baraja en Red7 es de 49 cartas: cada uno de los colores del arcoíris
+                                numerados del 1
+                                al 7. ¡Una mano toma solo un par de minutos!
+                            </p>
+                        </div>
+
+                    </div>
+
+                    <div class="col-xxl-3 col-lg-3 col-md-8 col-sm-12 g-2">
+
+                        <div class="col rounded-8">
+                            <h5>Revisión del juego</h5>
+                            <div class="ratio ratio-4x3">
+                                <iframe width="1024" height="768" src="https://www.youtube.com/embed/eoAbdOO7ir"
+                                    title="Reseña y Cómo Jugar: Red 7" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <footer class="bg-texture">
+        <div class="container-xxl container-md container-sm bg-black px-0 pb-3">
+
+            <div class="container pt-4">
+                <div class="row row-cols-1 row-cols-xxl-2 row-cols-lg-2 row-cols-md-2 row-cols-sm-1 g-3">
+
+                    <div class="col px-3 logo-white justify-content-md-end justify-content-sm-center">
+                        <a href="../index.html" class=" d-flex justify-content-md-start justify-content-sm-center ">
+                            <img src="../img/redoubleLogo.svg" alt="logo redouble" height="30vh">
+                        </a>
+                        <p class="text-white text-md-start text-sm-center py-2">© 2022 redouble. Todos los derechos
+                            reservados.
+                        </p>
+                    </div>
+                    <div class="col px-3">
+                        <ul class="nav logo-white justify-content-md-end justify-content-sm-center">
+                            <li class="nav-item mx-2"><a href="https://twitter.com/" target="_blank">
+                                    <i class="bi bi-twitter fs-5"></i>
+                                </a></li>
+                            <li class="nav-item mx-2"><a href="https://www.instagram.com/?hl=es-la" target="_blank">
+                                    <i class="bi bi-instagram fs-5"></i>
+                                </a></li>
+                            <li class="nav-item mx-2"><a href="https://www.facebook.com/home.php" target="_blank">
+                                    <i class="bi bi-facebook fs-5"></i>
+                                </a></li>
+                        </ul>
+                    </div>
+                </div>
+    </footer>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
