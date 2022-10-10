@@ -62,6 +62,12 @@ i {
     object-fit: cover;
 }
 
+.bg-construction {
+    background-image: url(../img/construction.jpg);
+    background-repeat: repeat;
+    object-fit: cover;
+}
+
 .border-grey {
     border-bottom: 1px dashed silver;
 }
@@ -74,6 +80,10 @@ i {
 .border-black {
     border-color: black;
     background-color: black;
+}
+
+.mt-ext {
+    margin-top: 40%;
 }
 
 .rounded-8 {
@@ -127,7 +137,6 @@ i {
     object-position: 10% 10%;
     border-radius: 4px;
 }
-
 
 .card-brand {
     width: 64px;
@@ -338,6 +347,10 @@ i:hover {
         height: auto;
         object-fit: contain;
     }
+
+    .mt-ext {
+        margin-top: 10%;
+    }
 }
 
 @media (min-width: 768px) {
@@ -372,6 +385,10 @@ i:hover {
         height: auto;
         object-fit: contain;
     }
+
+    .mt-ext {
+        margin-top: 10%;
+    }
 }
 
 @media (min-width: 1400px) {
@@ -396,5 +413,9 @@ i:hover {
         width: 100%;
         height: auto;
         object-fit: contain;
+    }
+
+    .mt-ext {
+        margin-top: 10%;
     }
 }
